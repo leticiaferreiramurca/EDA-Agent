@@ -1,12 +1,12 @@
 import re
-import warnings
+#import warnings
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from langchain_google_genai import ChatGoogleGenerativeAI as ChatGemini
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 
-warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
+#warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 
 pattern = re.compile(r"```python\n(.*?)\n```", re.DOTALL)
 
