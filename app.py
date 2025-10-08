@@ -88,7 +88,7 @@ def main():
     
     if uploaded_file is not None:
         # Display dataset with toggle
-        df = pd.read_csv(uploaded_file)
+        df = pd.read_csv(uploaded_file, sep=None, engine='python')
         st.write("Dataset:")
         show_full = st.checkbox("Dataset Carregado com sucesso!")
         if show_full:
